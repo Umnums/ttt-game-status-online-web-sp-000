@@ -13,7 +13,7 @@ board = ["X", "X", "X","","","","","",""]
 counter = 0
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    counter += 1
+    counter = counter + 1
     combination.all? do |tokens|
       tokens == "X"
       return WIN_COMBINATIONS[counter]
