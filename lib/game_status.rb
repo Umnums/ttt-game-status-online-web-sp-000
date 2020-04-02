@@ -10,7 +10,6 @@ WIN_COMBINATIONS = [
 ]
 
 board = ["", "O", "","","O","","","O",""]
-counter = 0
 def won?(board)
   counter = 0
   WIN_COMBINATIONS.each do |array|
@@ -26,7 +25,7 @@ def won?(board)
       return array
     end
   end
-  puts "No winning move"
+  return false
 end
 
 def full?(board)
@@ -36,6 +35,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board) && full?(board)
+  if !won?(board) && full?(board)
   end
+  return false
 end
