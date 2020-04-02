@@ -22,10 +22,11 @@ def won?(board)
     pos3 = board[index_3]
 
     if ((pos1 == "X" && pos2 == "X" && pos3 == "X")||(pos1 == "O" && pos2 == "O" && pos3 =="O"))
+      puts "#{array}"
       return array
     end
   end
-
+  puts "No winning move"
 end
 
 won?(board)
