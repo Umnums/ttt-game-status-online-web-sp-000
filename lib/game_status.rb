@@ -14,13 +14,16 @@ counter = 0
 def won?(board)
   counter = 0
   WIN_COMBINATIONS.each do |array|
-    puts "#{array}"
-    array.all? do |tokens|
-      puts "#{board[tokens]}"
-      puts "#{WIN_COMBINATIONS[counter]}"
+    index_1 = array[0]
+    index_2 = array[1]
+    index_3 = array[2]
+    pos1 = board[index_1]
+    pos2 = board[index_2]
+    pos3 = board[index_3]
+
+    if ((pos1 == "X" && pos2 == "X" && pos3 == "X")||(pos1 == "O" && pos2 == "O" && pos3 =="O"))
+      return array
     end
-  counter += 1
-  end
 
 end
 
