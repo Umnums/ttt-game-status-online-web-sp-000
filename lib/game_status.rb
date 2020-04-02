@@ -31,7 +31,8 @@ end
 
 def full?(board)
   board.none? do |i|
-    i == "" || i == " "
+    i == "" || i == " " || i == nil
   end
-
 end
+
+
