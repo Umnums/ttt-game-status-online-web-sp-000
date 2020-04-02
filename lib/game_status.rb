@@ -9,7 +9,7 @@ WIN_COMBINATIONS = [
   [2,4,6] #diagonals
 ]
 
-board = ["X", "O", "X","","","","","",""]
+board = ["O", "O", "O","","","","","",""]
 counter = 0
 def won?(board)
   counter = 0
