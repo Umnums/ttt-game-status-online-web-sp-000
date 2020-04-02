@@ -29,4 +29,7 @@ def won?(board)
   puts "No winning move"
 end
 
-won?(board)
+def full?(board)
+
+end
+
