@@ -34,3 +34,8 @@ def full?(board)
     i == "" || i == " " || i == nil
   end
 end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+  end
+end
