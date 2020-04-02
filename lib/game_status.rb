@@ -34,5 +34,3 @@ def full?(board)
     i == "" || i == " " || i == nil
   end
 end
-
-
