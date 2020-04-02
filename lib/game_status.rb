@@ -1,9 +1,3 @@
-# Helper Method
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
-
-# Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2], # top row
   [3,4,5], # middle row
@@ -16,13 +10,16 @@ WIN_COMBINATIONS = [
 ]
 
 board = ["X", "X", "X","","","","","",""]
+counter = 0
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
+    counter += 1
     combination.all? do |tokens|
-      state = tokens == "X" || tokens == "O"
+      tokens == "X" 
+      return WIN_COMBINATIONS[counter]
     end
   end
-  return "#{state}"
+
 end
 
 won?(board)
