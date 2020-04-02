@@ -15,7 +15,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combination|
     counter += 1
     combination.all? do |tokens|
-      tokens == "X" 
+      tokens == "X"
       return WIN_COMBINATIONS[counter]
     end
   end
