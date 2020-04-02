@@ -17,7 +17,7 @@ def won?(board)
     puts "#{array}"
     array.all? do |tokens|
       board[tokens] == "X"
-      puts "#{array[tokens]}"
+      puts "#{board[tokens]}"
       puts "#{WIN_COMBINATIONS[counter]}"
       return WIN_COMBINATIONS[counter]
     end
